@@ -1,0 +1,12 @@
+img1=imread('1.jpg');
+% figure, imshow(rgb2gray(img1));
+figure, imshow(img1);
+img2=imread('2.jpg');
+% figure, imshow(rgb2gray(img2));
+figure, imshow(img2);
+w=fspecial('gaussian',50 ,100) ;
+img3=imfilter(img2, w);
+img4=imfilter(img1, w) ;
+img5=img1-img4;
+img6=img5+img3;
+figure, imshow(img6);

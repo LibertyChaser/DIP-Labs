@@ -1,0 +1,5 @@
+*.zip
+*.ppt*
+ref
+*.pdf
+.DS_Store
